@@ -115,7 +115,6 @@ alias t='tree'
 alias vimbegood='docker run -it --rm brandoncc/vim-be-good:stable'
 alias start-windows='cd ~/windows && docker-compose up -d && cd -'
 alias stop-windows='cd ~/windows && docker-compose down && cd -'
-alias nvimx='NVIM_APPNAME=nvimx nvim'
 alias bat='batcat'
 
 export PATH="$PATH:/opt/nvim-linux64/bin:/opt/cmake/bin:$HOME/.local/bin:/opt/zig:/opt/zen"
