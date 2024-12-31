@@ -118,6 +118,11 @@ alias stop-windows='cd ~/windows && docker-compose down && cd -'
 alias bat='batcat'
 alias n="nvim -c 'lua require(\"telescope.builtin\").find_files()'"
 alias editnvim='cd ~/.config/nvim && n'
+alias gts='git status'
+alias gta='git add .'
+alias gtap='git add -p'
+alias gtc='git commit -m'
+alias gtp='git push'
 
 export PATH="$PATH:/opt/nvim-linux64/bin:/opt/cmake/bin:$HOME/.local/bin:/opt/zig:/opt/zen"
 
