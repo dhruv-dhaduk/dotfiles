@@ -117,6 +117,7 @@ alias start-windows='cd ~/windows && docker-compose up -d && cd -'
 alias stop-windows='cd ~/windows && docker-compose down && cd -'
 alias bat='batcat'
 alias n="nvim -c 'lua require(\"telescope.builtin\").find_files()'"
+alias editnvim='cd ~/.config/nvim && n'
 
 export PATH="$PATH:/opt/nvim-linux64/bin:/opt/cmake/bin:$HOME/.local/bin:/opt/zig:/opt/zen"
 
