@@ -123,6 +123,7 @@ alias gta='git add .'
 alias gtap='git add -p'
 alias gtc='git commit -m'
 alias gtp='git push'
+alias clock='tty-clock -c -s'
 
 export PATH="$PATH:/opt/nvim-linux64/bin:/opt/cmake/bin:$HOME/.local/bin:/opt/zig:/opt/zen"
 
@@ -177,6 +178,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+enable_powerline=no
 if [ "$TERM" = "xterm-kitty" ]; then
+    enable_powerline=yes
+fi
+
+if [ "$TERMINFO" = "$HOME/.local/kitty.app/lib/kitty/terminfo" ]; then
+    enable_powerline=yes
+fi
+
+if [ "$enable_powerline" = "yes" ]; then
     eval "$(starship init bash)"
 fi
