@@ -124,6 +124,8 @@ alias gtap='git add -p'
 alias gtc='git commit -m'
 alias gtp='git push'
 alias clock='tty-clock -c -s'
+alias cdf='cd "$(find . -type d | fzf)"'
+alias cdfh='cd "$(find ~ -type d | fzf)"'
 
 export PATH="$PATH:/opt/nvim-linux64/bin:/opt/cmake/bin:$HOME/.local/bin:/opt/zig:/opt/zen"
 
