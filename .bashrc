@@ -126,6 +126,11 @@ alias gtp='git push'
 alias clock='tty-clock -c -s'
 alias cdf='cd "$(find . -type d | fzf)"'
 alias cdfh='cd "$(find ~ -type d | fzf)"'
+alias codef='code "$(find . type d | fzf)"'
+alias codefh='code "$(find ~ type d | fzf)"'
+alias fzfp='fzf --preview="cat {}"'
+alias catf='cat "$(fzfp)"'
+alias batf='batcat "$(fzfp)"'
 
 export PATH="$PATH:/opt/nvim-linux64/bin:/opt/cmake/bin:$HOME/.local/bin:/opt/zig:/opt/zen"
 
