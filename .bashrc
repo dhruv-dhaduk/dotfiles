@@ -197,3 +197,8 @@ fi
 if [ "$enable_powerline" = "yes" ]; then
     eval "$(starship init bash)"
 fi
+
+
+if [ "$PWD" = "/home/dhruvdhaduk" ]; then
+    cdfh
+fi
